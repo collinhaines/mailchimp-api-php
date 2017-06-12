@@ -240,7 +240,7 @@ class MailchimpListsTest extends \PHPUnit_Framework_TestCase {
 
     $request_body = $mc->getClient()->options['json'];
 
-    $this->assertEquals($name, $request_body->name);
+    $this->assertEquals($name, $request_body['name']);
   }
 
   /**
